@@ -131,7 +131,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 pyspark = "^3.4.0"
-tensorflow = "^2.13.0"
+tensorflow = "^2.5.0"
 numpy = "^1.24.0"
 pandas = "^2.0.0"
 scikit-learn = "^1.3.0"
