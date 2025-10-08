@@ -182,3 +182,12 @@ print(f"✅ Feature extraction terminée: {count} images")
   - ✅ Confirme la faisabilité technique (PCA ≥90% variance)
   - ✅ Permet scale-up sur dataset complet avec budget étendu
   - ✅ Trade-off optimal temps/coût pour preuve de concept"
+
+---
+
+Résultats
+  - Images traitées : 22,688 (sur 20,000 prévues)
+  - Features extraites : 1280 dimensions par image
+  - Stockage S3 : ~1.2 GB en Parquet
+  - Temps d'exécution : Environ combien d'heures ?
+  - Coût AWS : 1,78 $
