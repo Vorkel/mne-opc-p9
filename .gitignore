@@ -45,8 +45,6 @@ MANIFEST
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
 
-# Sorties de notebooks
-*.ipynb
 
 # ===========================================
 # SPARK & BIG DATA

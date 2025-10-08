@@ -7,22 +7,22 @@
 
 ---
 
-## 📌 Important à Savoir AVANT de Commencer
+## Important à Savoir AVANT de Commencer
 
-### ⚠️ WARNINGS CRITIQUES
+### WARNINGS CRITIQUES
 
 1. **NE PAS OUBLIER DE TERMINER LE CLUSTER EMR** à la fin → Sinon coûts continuent !
 2. **TOUJOURS vérifier que vous êtes en région eu-west-1** (coin haut droit AWS Console)
 3. **Configurer les alertes budget** AVANT de créer quoi que ce soit
 4. **Sauvegarder le fichier .pem** (clé SSH) dans un endroit sûr (`~/.ssh/`)
 
-### 💰 Budget et Coûts
+### Budget et Coûts
 
 - **Budget maximum :** 10€
 - **Coûts estimés réels :** ~1.69€
 - **Marge de sécurité :** 8.31€ (83%)
 
-### ⏱️ Temps Estimé Total : ~6 heures
+### Temps Estimé Total : ~6 heures
 
 | Phase | Durée | Travail Actif | Attente | Quand faire |
 |-------|-------|---------------|---------|-------------|
@@ -38,9 +38,9 @@
 
 ---
 
-## 📋 Prérequis - Vérification
+## Prérequis - Vérification
 
-### ✅ Compte AWS
+### Compte AWS
 
 - [ ] Compte AWS créé sur https://aws.amazon.com
 - [ ] Email de confirmation AWS reçu
