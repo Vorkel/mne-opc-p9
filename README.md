@@ -158,3 +158,27 @@ Impact :
 ✅ Stockage : ~445 MB → ~89 MB (~356 MB économisés)
 ✅ Qualité : Variance conservée ≥ 90%
 ✅ Scalabilité : PySpark ML distribué (pas scikit-learn)
+
+
+4.10.5.4. Application du modèle MobileNetV2
+spark.conf.set("spark.sql.execution.arrow.maxRecordsPerBatch", "256")
+
+features_df = images.repartition(12).select(col("path"),
+                                            col("label"),
+                                            featurize_udf("content").alias("features")
+                                           ).cache()
+print("Démarrage feature extraction...")
+count = features_df.count()  # ← Force le calcul
+print(f"✅ Feature extraction terminée: {count} images")
+
+
+ Question jury: "Pourquoi 20k images au lieu de 67k?"
+
+  Réponse:
+  "Pour des contraintes de temps et budget (10€ max), nous avons validé
+  le pipeline sur un échantillon représentatif de 20,000 images (30% du
+  dataset). Cette approche:
+  - ✅ Valide l'architecture Big Data (Spark distribué, S3, EMR)
+  - ✅ Confirme la faisabilité technique (PCA ≥90% variance)
+  - ✅ Permet scale-up sur dataset complet avec budget étendu
+  - ✅ Trade-off optimal temps/coût pour preuve de concept"
